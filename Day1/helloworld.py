@@ -1,0 +1,22 @@
+print(3+4)
+print(3-4)
+print(3*4)
+print(3%4)
+print(3/4)
+print(3**4)
+print(3//4)
+
+print("Handy Frank Wily Ambarita")
+print("Ambarita")
+print("Indonesia")
+print("I am enjoying 30 days of python")
+
+
+print(type(10))
+print(type(9.5))
+print(type(3.14))
+print(type(4-4j))
+print(type(['Handy', 'Python','Finland']))
+print(type("Handy"))
+print(type("Ambarita"))
+print(type("Indonesia"))
