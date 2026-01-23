@@ -14,3 +14,11 @@ is_true = True
 is_light = False
 
 occupation, location, is_working ='Teacher','Surabaya', True
+
+type(first_name)
+type(last_name)
+type(full_name)
+type(city)
+type(age)
+type(year)
+type(is_married)
