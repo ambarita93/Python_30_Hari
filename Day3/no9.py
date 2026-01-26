@@ -11,3 +11,7 @@ distance = np.sqrt((x2-x1)**2+(y2-y1)**2)
 
 print("The slope of the line is", slope)
 print("The distance between the points is",distance)
+print("Now, given y=x^2+6x+9")
+x=float(input("Enter x to find y for the function: "))
+y=x**2+6*x+9
+print("Ok, the y-value is", y)
