@@ -12,3 +12,4 @@ side_b = float(input("Enter side b: "))
 side_c = float(input("Enter side c: "))
 perimeter = side_a+side_b+side_c
 print("The perimeter of the triangle is", perimeter)
+
