@@ -43,5 +43,6 @@ print(circum_of_circle)
 first_name=input("Masukkan nama Anda: ")
 last_name = input("Masukkan nama keluarga Anda: ")
 country = input("Masukkan negara asal Anda: ")
+ideals = input("What is your ideals? ")
 
 help('keywords')
