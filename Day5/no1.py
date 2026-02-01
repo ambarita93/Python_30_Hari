@@ -17,3 +17,8 @@ it_companies[2] = it_companies[2].upper()
 print(it_companies)
 join_it_companies='# '.join(it_companies)
 print(join_it_companies)
+
+it_companies.sort()
+print(it_companies)
+it_companies.sort(reverse=True)
+print(it_companies)
