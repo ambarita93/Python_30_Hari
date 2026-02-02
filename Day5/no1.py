@@ -22,3 +22,29 @@ it_companies.sort()
 print(it_companies)
 it_companies.sort(reverse=True)
 print(it_companies)
+
+print(it_companies[0:3]) #first 3 item
+print(it_companies[-3:]) #last 3 item
+print(it_companies[3:5]) #middle item
+first_it_companies = it_companies[0]
+middle_it_companies = it_companies[3]
+last_it_companies = it_companies[-1]
+it_companies.remove(first_it_companies)
+print(it_companies)
+it_companies.remove(middle_it_companies)
+print(it_companies)
+it_companies.remove(last_it_companies)
+
+print(it_companies)
+it_companies.clear()
+print(it_companies)
+del it_companies
+
+front_end = ['HTML','CSS','JS','React','Redux']
+back_end = ['Node','Express','MongoDB']
+
+full_stack = front_end + back_end
+
+full_stack.insert(5,'Python')
+full_stack.insert(5,'SQL')
+print(full_stack)
