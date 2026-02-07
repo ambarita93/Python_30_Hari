@@ -12,3 +12,15 @@ elif score>=0 and score <=59:
     print("It gets E grade")
 else:
     print("Please, enter the right score.")
+
+
+
+fruit = input("Enter a name of fruit: ")
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruit_lower = fruit.lower()
+if fruit_lower in fruits:
+    print("{} exists in the list.".format(fruit_lower))
+else:
+    print("{} doesn't exists. So,it will be added to the list.".format(fruit_lower))
+    fruits.append(fruit_lower)
+    print(fruits)
