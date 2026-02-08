@@ -34,4 +34,4 @@ elif skills_of_back_end.issubset(my_skills):
 elif skills_of_full_stack.issubset(my_skills):
     print("With his skills:{}, he can be a front end developer.".format(skills_of_full_stack))
 else:
-    print("With his skills ({}), he needs one more languange to determine his career path.".format(my_skills))
+    print("Given his skills ({}), he needs one more languange to determine his career path.".format(my_skills))
