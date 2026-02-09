@@ -14,5 +14,13 @@ while s>0:
     print("'while'",s)
     s = s - 1
 
-for i1 in range(7):
-    print('#')
+for i1 in range(8):
+    for i2 in range(0,i1):
+        print('#',end='')
+    print("")
+print('\n')
+
+for i1 in range(9):
+    for i2 in range(9):
+        print("#",end=' ')
+    print("")
