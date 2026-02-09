@@ -6,3 +6,10 @@ while k <= 10:
     print("'while'",k)
     k = k + 1
 
+for j in range(10,0,-1):
+    print("'for'",j)
+
+s = 10
+while s>0:
+    print("'while'",s)
+    s = s - 1
