@@ -13,3 +13,6 @@ s = 10
 while s>0:
     print("'while'",s)
     s = s - 1
+
+for i1 in range(7):
+    print('#')
