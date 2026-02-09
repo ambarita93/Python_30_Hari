@@ -1,2 +1,2 @@
-for i in range(11):
-    print('{}x{}={}'.format(i,i,(i*i)))
+for i in range(30):
+    print('{} x {} = {}'.format(i,i,(i*i)))
