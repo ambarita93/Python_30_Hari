@@ -2646,8 +2646,8 @@ sorted_language = dict(sorted(language_dict.items(),key=lambda item:item[1],reve
 top10 = itertools.islice(sorted_language.items(),10)
 top10_dict = dict(top10)
 
-#print("These are top-10 most spoken languages in the world.")
-#print(top10_dict)
+print("These are top-10 most spoken languages in the world.")
+print(top10_dict)
 
 population = 0
 country_population = dict()
