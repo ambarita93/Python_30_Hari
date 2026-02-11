@@ -2619,6 +2619,9 @@ countries_data = [
     }
 ]
 
+
+import itertools
+
 language_st = set()
 language_lst = list()
 for data in countries_data:
@@ -2629,12 +2632,32 @@ for data in countries_data:
 print("The total number of languages in data countries_data.py is ",len(language_st))
 print(len(language_lst))
 
-count = 0
+
+
+
 language_dict = dict()
 language_lst.sort()
 for lang in language_st:
     language_dict[lang]=language_lst.count(lang)
 
 sorted_language = dict(sorted(language_dict.items(),key=lambda item:item[1],reverse=True))
-print(language_dict.items())
-#print(sorted_language)
+#print(language_dict.items())
+
+top10 = itertools.islice(sorted_language.items(),10)
+top10_dict = dict(top10)
+
+#print("These are top-10 most spoken languages in the world.")
+#print(top10_dict)
+
+population = 0
+country_population = dict()
+popul = []
+county = []
+
+country_population = {item['name']: item['population'] for item in countries_data}
+
+sorted_population = dict(sorted(country_population.items(),key=lambda item:item[1],reverse=True))
+top10_population = itertools.islice(sorted_population.items(),10)
+top10_population_dict = dict(top10_population)
+
+print(top10_population_dict)
