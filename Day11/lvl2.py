@@ -27,14 +27,16 @@ print(factorial(10))
 def unique_list(*lst):
     n = len(lst)
     mark =0
+    not_unique = []
     for i in range(n-1):
         if lst[i] == lst[i+1]:
             mark = mark + 1
+            not_unique.append(lst[i])
         else:
             continue
     if mark == 0:
-        return print("List are unique!")
+        return print(f"List {lst} are unique!")
     else:
-        return print("List are not unique!")
+        return print(f"List {lst} are not unique! The item:{not_unique} appear more than once.")
 
-unique_list(1,2,3,4,5,6,7,8,9,10,12,13,'a','b','c')
+unique_list(1,2,18,3,4,5,6,7,8,9,17,12,13,'a','b','c')
