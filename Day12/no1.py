@@ -1,5 +1,6 @@
 import secrets
 import string
+from random import randint
 
 def random_user_id():
     random_string = ''.join(secrets.choice(string.ascii_letters+string.digits) for i in range(8))
@@ -16,3 +17,12 @@ def user_id_gen_by_user():
         print(random_string)
 
 user_id_gen_by_user()
+
+def rgb_color_gen():
+    red = randint(0,255)
+    green = randint(0,255)
+    blue = randint(0,255)
+    rgb = f'rgb({red},{green},{blue})'
+    return rgb
+
+print(rgb_color_gen())
