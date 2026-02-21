@@ -23,5 +23,5 @@ numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
 filtered_numbers = [i for i in numbers if i>0]
 print(filtered_numbers)
 
-something = [(i,j,k) for i in range(2) for k in range(3) for j in range(4)]
+something = [(i,i**0,i**(1),i**(2),i**(3),i**(4),i**(5)) for i in range(11) ]
 print(something)
