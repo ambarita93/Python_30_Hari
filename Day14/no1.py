@@ -10,6 +10,7 @@ print(list(odd_numbers))
 
 
 def cubic(number):
-    return x**3
+    return number**3
 
-numbers_cubic 
+numbers_cubic = map(cubic,numbers)
+print(list(numbers_cubic))
