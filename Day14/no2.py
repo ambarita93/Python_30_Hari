@@ -1,4 +1,4 @@
-numbers = [1,2,3,4,5,6]
+numbers = [3,2,4,5]
 
 def square(x):
     return x**2
@@ -11,4 +11,12 @@ def is_prime(x):
             mark = mark + 1
         else:
             continue
-        
+
+def add_two_numbers(x,y):
+    return x * y
+
+from functools import reduce
+
+total = reduce(add_two_numbers,numbers)
+
+print(total)
