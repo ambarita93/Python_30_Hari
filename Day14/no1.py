@@ -1,4 +1,4 @@
-numbers =  [i for i in range(20)]
+numbers =  [i for i in range(30)]
 
 def is_odd(number):
     if number%2 !=0:
@@ -14,3 +14,8 @@ def cubic(number):
 
 numbers_cubic = map(cubic,numbers)
 print(list(numbers_cubic))
+
+def quant_number(number):
+    return number**4
+numbers_quant = map(quant_number,numbers)
+print(list(numbers_quant))
