@@ -24,3 +24,20 @@ def unpacking_person_info(name, country, city, age):
 data = {'name':'Handy', 'country':'Indonesia','city':'Surabaya','age':33}
 
 print(unpacking_person_info(**data))
+
+#packing dictionaries
+def packing_person_info(**kwargs):
+    for key in kwargs:
+        print(f"{key}={kwargs[key]}")
+    return kwargs
+
+print(packing_person_info(name='Handy Ambarita',country ='Indonesia',city='Surabaya',age = '33'))
+
+# learn to use enumerate
+for index, item in enumerate([20,30,40,50,55,65,79]):
+    print(index,item)
+
+countries = ['Finland','Indonesia','Sweden','Germany','Norway','Denmark','Iceland']
+for index, item in enumerate(countries):
+    if item == 'Indonesia':
+        print(f'The country {item} has been found at index {index}')
