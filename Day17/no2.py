@@ -41,3 +41,13 @@ countries = ['Finland','Indonesia','Sweden','Germany','Norway','Denmark','Icelan
 for index, item in enumerate(countries):
     if item == 'Indonesia':
         print(f'The country {item} has been found at index {index}')
+# learn to use zip
+# sometimes we would like to combine list when looping through them. 
+
+fruits = ['apple','banana','mango','orange','pineapple','watermelon']
+vegetables = ['tomato','potato','cabbage','onion','carrot','ginger']
+fruits_and_vegetables = [] # combine fruits and vegetables
+for f,v in zip(fruits,vegetables):
+    fruits_and_vegetables.append({'fruit':f,'veg':v})
+
+print(fruits_and_vegetables)
