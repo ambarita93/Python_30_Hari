@@ -1,0 +1,1 @@
+Saya sedang belajar file handling atau penanganan berkas pada Python
