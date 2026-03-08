@@ -1,6 +1,5 @@
 import requests
 
-url = 'https://www.w3.org/TR/PNG/iso_8859-1.txt' # text from a website
-
-respons = requests.get(url)
-print(respons)
+url = 'https://www.gutenberg.org/files/1342/1342-0.txt' # text from a website
+response = requests.get(url)
+print(response.text[:500]) # print the first 500 characters of the text
