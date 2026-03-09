@@ -13,7 +13,12 @@ print(start,end)
 substring = text[start:end]
 print(substring)
 
+
+#Data Science From Scratch.pdf
+
 from matplotlib import pyplot as plt
 
-years = [year for year in range(1950,10)]
-print(years)
+years = [year for year in range(1950,2020,10)]
+gdp = [300.2,543.3,1075.9,2862.5]
+
+
