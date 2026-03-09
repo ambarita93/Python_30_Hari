@@ -51,3 +51,9 @@ for f,v in zip(fruits,vegetables):
     fruits_and_vegetables.append({'fruit':f,'veg':v})
 
 print(fruits_and_vegetables)
+
+names = ['Finland', 'Sweden', 'Norway','Denmark','Iceland', 'Estonia','Russia']
+
+index = [0,4]
+nordic_country = names[0:4]
+print(nordic_country)
