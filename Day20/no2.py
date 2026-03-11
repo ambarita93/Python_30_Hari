@@ -6,7 +6,7 @@ response = requests.get(url) # akses website
 print(response) # tampilkan apakah websitenya memberi respons yang diharapkan
 data_of_cat = response.json() #ambil data yang semula JSON kemudian dijadikan list 
 
-#print(data_of_cat[:1]) #tampilkan data pertama dari data_of_cat.
+print(data_of_cat[:1]) #tampilkan data pertama dari data_of_cat.
 
 
 wht = []
@@ -28,4 +28,4 @@ max_weight = max(wht_metric_max)
 min_weight = max(wht_metric_min)
 median_weight = statistics.median(wht_metric_median)
 std_weight = statistics.stdev(wht_metric_median)    
-print(f"The biggest weight is {max_weight}, the lightest is {min_weight}, the median {median_weight}, and standard deviation of cats' weight {std_weight}")
+print(f"The biggest weight is {max_weight}, the lightest is {min_weight}, the median is {median_weight}, and standard deviation of cats' weight {std_weight}")
