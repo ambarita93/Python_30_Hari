@@ -4,20 +4,30 @@ class PersonAccount:
         self.last_name = last_name
         self.incomes = incomes
         self.expenses = expenses
-        self.total_income = 0
+
     def total_income(self):
-        return self.total_income 
+        return self.incomes
     
     def total_expense(self):
-        pass
+        return self.expenses
     
     def account_info(self):
-        pass
+        print(f"Account of {self.first_name} {self.last_name} has {self.incomes} for income and {self.expenses} for expense.")
 
     def add_income(self,incomes):
-        pass
+        self.incomes = self.incomes + incomes
+        
 
     def add_expense(self,expenses):
-        pass
+        self.expenses = self.expenses + expenses
+    
     def account_balance(self):
-        pass
+        print(f"The balance is {self.incomes-self.expenses}")
+    
+p1 = PersonAccount('Handy','Ambarita',1000,400)
+p1.account_info()
+p1.add_expense(200)
+p1.account_balance()
+p1.add_income(2000)
+p1.account_info()
+p1.account_balance()
