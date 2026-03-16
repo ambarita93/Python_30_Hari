@@ -2,10 +2,9 @@ import requests
 
 from bs4 import BeautifulSoup
 
-url = 'https://archieve.ics.uci.edu/ml/dataset.php'
+url = 'https://www.kompas.com/'
 
 response = requests.get(url)
 status = response.status_code
+print(status)
 
-if status == 200:
-    soup = BeautifulSoup(response.text, 'html.parser')
