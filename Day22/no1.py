@@ -1,4 +1,5 @@
 import requests
+import json
 
 from bs4 import BeautifulSoup
 
@@ -19,10 +20,10 @@ if tabel_provinsi: # tabel tidak kosong
 
     for baris in semua_baris:
         kolom = baris.find_all('td')
-        if len(kolom)>7:
+        if len(kolom)>8:
             nama_provinsi = kolom[4].get_text(strip=True)
-            luas_wilayah = kolom[7].get_text(strip=True)
-            populasi = kolom[8].get_text(strip=True)
+            luas_wilayah = float(kolom[8].get_text(strip=True).strip('()').replace(',',''))
+            populasi = int(kolom[-4].get_text(strip=True).strip('()').replace(',',''))
             data_hasil_scraping.append({
                 'Provinsi': nama_provinsi,
                 'Luas': luas_wilayah,
@@ -31,5 +32,7 @@ if tabel_provinsi: # tabel tidak kosong
     print("\nScraping selesai.")
 else: #tabel kosong
     print("Tabel provinsi tidak ditemukan.")
-print(data_hasil_scraping)
+#print(data_hasil_scraping)
+data_hasil_scraping_json = json.dumps(data_hasil_scraping, indent=4)
+print(data_hasil_scraping_json)
 
