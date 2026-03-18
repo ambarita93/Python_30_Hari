@@ -22,9 +22,11 @@ if tabel_provinsi: # tabel tidak kosong
         if len(kolom)>7:
             nama_provinsi = kolom[4].get_text(strip=True)
             luas_wilayah = kolom[7].get_text(strip=True)
+            populasi = kolom[8].get_text(strip=True)
             data_hasil_scraping.append({
                 'Provinsi': nama_provinsi,
-                'Luas': luas_wilayah
+                'Luas': luas_wilayah,
+                'Populasi':populasi
             })
     print("\nScraping selesai.")
 else: #tabel kosong
