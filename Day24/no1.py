@@ -8,3 +8,6 @@ print(two_dimensional_list)
 numpy_array_from_list = np.array(python_list)
 print(type(numpy_array_from_list))
 print(numpy_array_from_list)
+
+numpy_array_from_list2 = np.array(python_list, dtype=float)
+print(numpy_array_from_list2)
