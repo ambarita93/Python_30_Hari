@@ -26,3 +26,9 @@ print(numpy_two_dimensional_list)
 np_to_list = numpy_array_from_list.tolist()
 print("one dimension array: ",np_to_list)
 print("two dimension array: ",numpy_two_dimensional_list.tolist())
+
+array1 = np.array([j for j in range(12)])
+ten_plus_array = array1 + 10
+print(ten_plus_array)
+two_modulus_array = array1 % 2
+print(two_modulus_array)
