@@ -1,6 +1,6 @@
 import numpy as np
 
-python_list = [i for i in range(10)]
+python_list = [i for i in range(12)]
 
 two_dimensional_list = [[0,1,2],[3,4,5],[6,7,8]]
 print(two_dimensional_list)
@@ -22,3 +22,7 @@ print(numpy_bool_array)
 numpy_two_dimensional_list = np.array(two_dimensional_list)
 print(type(numpy_two_dimensional_list))
 print(numpy_two_dimensional_list)
+
+np_to_list = numpy_array_from_list.tolist()
+print("one dimension array: ",np_to_list)
+print("two dimension array: ",numpy_two_dimensional_list.tolist())
