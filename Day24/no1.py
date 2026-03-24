@@ -35,3 +35,7 @@ print(two_modulus_array)
 
 exponent_np_array = array1**2
 print(exponent_np_array)
+
+two_dimensional_list2 = np.array([[9,8,7],[6,5,4],[3,2,1]])
+first_one_row_two_columns = two_dimensional_list2[0:1,0:2]
+print(first_one_row_two_columns)
