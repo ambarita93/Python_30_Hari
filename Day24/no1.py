@@ -32,3 +32,6 @@ ten_plus_array = array1 + 10
 print(ten_plus_array)
 two_modulus_array = array1 % 2
 print(two_modulus_array)
+
+exponent_np_array = array1**2
+print(exponent_np_array)
