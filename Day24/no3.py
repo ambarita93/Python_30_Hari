@@ -9,7 +9,7 @@ plt.hist(normal_array,color="grey",bins=50)
 plt.show()
 '''
 
-array_linspace = np.linspace(1.0,5.0,2)
+array_linspace = np.linspace(1.0,12,6)
 print(array_linspace)
-array_arange = np.arange(0,10,2.5)
+array_arange = np.arange(0,10,2.1)
 print(array_arange)
