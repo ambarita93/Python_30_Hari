@@ -10,9 +10,9 @@ s10 = pd.Series(10,index=[1,2,3,4,5])
 print(s10)
 
 data = [['Handy','Indonesia','Surabaya'],
-        ['Mateo','Rusia','Moskow'],
-        ['Ambarita','Belanda','Amsterdam']
-        ]
+	['Mateo','Rusia','Moskow'],
+	['Ambarita','Belanda','Amsterdam']
+	]
 df = pd.DataFrame(data,columns=['Nama','Negara','Kota'])
 
 bobot = [74,78,69]
@@ -20,4 +20,17 @@ tinggi2 = [163,175,160]
 
 df['Masssa'] = bobot
 df['Tinggi'] = tinggi2
+
+def calculate_bmi():
+    weights = df['Masssa']
+    heights = df['Tinggi'] * 0.01
+    bmi = []
+    for w,h in zip(weights,heights):
+        b = w / (h * h)
+        bmi.append(b)
+    return bmi
+
+bmi = calculate_bmi()
+df['BMI'] = bmi
+
 print(df)
